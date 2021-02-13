@@ -1,0 +1,126 @@
+.about {
+    height: 75vh;    
+    width: 100%;
+    background-color: $about-color;
+    position: relative; 
+    overflow: hidden;
+    @media only screen and (max-width: 37.5em)
+    { 
+        height: 85vh;      
+    }     
+
+    &__us {
+        display: grid;
+        grid-template-columns: 45rem 40rem;
+        grid-template-rows: 15rem 35rem 10rem;
+        justify-content: space-around;  
+        @media only screen and (max-width: 37.5em) {
+            grid-template-columns: 43rem;
+            grid-template-rows: 15rem 35rem 35rem;
+                 
+        }
+    }         
+    &__heading {
+        font-size: 4rem; 
+        font-weight: 700; 
+        letter-spacing: .1rem;
+        text-align: left;
+        text-transform: uppercase;
+        color: $color-shadow;
+        padding: 3.5rem 0;     
+        grid-column: 1/-1; 
+        text-align: center;                         
+    }                  
+    &__text { 
+        grid-column: 1/2;
+        grid-row: 2/3;
+        @media only screen and (max-width: 37.5em) {
+            grid-column: 1/-1;
+            grid-row: 2/3;
+        } 
+        &-itemhead {      
+            font-size: 2.5rem;
+            color: $color-dark-1;   
+            letter-spacing: .08rem;    
+        } 
+        &-item {
+            font-size: 1.7rem;   
+            color: $color-dark-1;
+            font-weight: 400; 
+            letter-spacing: 0.02rem;
+            padding: 1rem 0;  
+        } 
+    }          
+    &__img {
+        grid-column: 2/-1;    
+        grid-row: 2/3; 
+        @media only screen and (max-width: 37.5em) {
+            grid-column: 1/-1;
+            grid-row: 3/-1;
+        } 
+       
+        &-item {      
+
+            position: absolute;        
+            height: 25rem;
+            width: 35rem;  
+            @media only screen and (max-width: 37.5em)  {
+                height: 10rem;
+                width: 12rem;      
+            }   
+        }
+        &-1 {
+            @media only screen and (max-width: 92.5em) {
+                left: 71rem;      
+            }  
+            @media only screen and (max-width: 37.5em) {
+                top:53rem;
+                left: 1rem;    
+            }
+            &:hover {
+                transform: scale(1.15) translateY(-0.5rem);
+                z-index: 1; 
+                transition: all .2s; 
+                box-shadow: 0 2.5rem 4rem $color-shadow;  
+            }   
+        }      
+        &-2 {
+            top: 20rem;   
+            left: 110rem;  
+            @media only screen and (max-width: 92.5em) {
+            top: 10rem;
+            left: 92rem;  
+            }
+            @media only screen and (max-width: 37.5em) {   
+                top:53rem; 
+                left: 15rem;    
+            }
+            &:hover {        
+                transform: scale(1.15) translateY(-0.5rem);
+                z-index: 1; 
+                transition: all .2s;   
+                box-shadow: 0 2.5rem 4rem $color-shadow; 
+            }   
+        }     
+        &-3 { 
+            top: 30rem;  
+            left: 91rem;   
+            @media only screen and (max-width: 92.5em) {
+                top: 26rem;
+                left: 84rem;
+            } 
+            @media only screen and (max-width: 37.5em) {
+                top:53rem ;
+                left: 33rem;  
+            }
+            &:hover {
+                transform: scale(1.1) translateY(-0.5rem);
+                z-index: 1; 
+                transition: all .2s;   
+                box-shadow: 0 2.5rem 4rem $color-shadow; 
+            } 
+        }     
+    }                
+        
+        
+}    
